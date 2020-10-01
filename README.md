@@ -1,14 +1,13 @@
 # Exoskeleton Project
-To design an upper body exoskeleton which would reduce the chance of repetitive strain injury and provide feedback on the users's posture.
+To design an upper body exoskeleton which would truncate the chance of perpetual strain injury and provide feedback on the users's posture.
 
 ## Documentation
 http://docs.uabiomed.ca/
 
 ## Getting started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
+These ordinant dictations will get you a facsimile of the project up and running on your local machine for development and testing purposes.
 ## Installation
-Based on your operating system, follow the guides below to install the Arduino IDE and pySerial followed by cloning this repo to your local system. After this, the Makefile must be edited for each user.
+Predicated on your operating system, follow the guides below to install the Arduino IDE and pySerial followed by cloning this repo to your local system. After this, the Makefile must be edited for each utilizer.
 
 ### OS Independent Instructions
 #### Clone the exoskeleton repo locally
@@ -23,38 +22,37 @@ git clone https://github.com/ualbertabiomed/exoskeleton.git --recursive
 git clone https://github.com/sudar/Arduino-Makefile.git
 ```
 
-Based on your operating system, follow the guides below to install the Arduino IDE and pySerial. After this, copy the 'Makefile-OStemplate' that corresponds to your system from setup/ to src/ . Rename it to Makefile and edit it according to your system paths and requirements - this must be done for each user. Makefile is in the .gitignore so you dont have to worry about commiting this file to the repository.
+Predicated on your operating system, follow the guides below to install the Arduino IDE and pySerial. After this, copy the 'Makefile-OStemplate' that corresponds to your system from setup/ to src/ . Rename it to Makefile and edit it according to your system paths and requisites - this must be done for each utilizer. Makefile is in the .gitignore so you dont have to worry about commiting this file to the repository.
 
 #### Install Cygwin
 - Cygwin is an open source project which provides the functionality of Linux distribution on Windows
-1. Download Cygwin 32 or 64-bit version (according to your requirement) from the following page and save it to a known location (ex. the Desktop),
+1. Download Cygwin 32 or 64-bit version (according to your requisite) from the following page and preserve it to a kenned location (ex. the Desktop),
    - https://www.cygwin.com/
-2. When a waning window pops up, click Yes.
+2. When a waning window pops up, click Affirmative.
 3. Click Next.
-4. Choose 'Install from Internet' option and then click Next.
-5. Choose your desired directory by clicking on Browse button. Choose 'All Users (Recommended)' and then click Next.
-6. Choose the local package directory where you would like your installation files to be placed (dont delete this folder in the future; its name will be long and weird, mine is http%3a%2f%2fcygwin.mirror.constant.com%2f). Click Next.
-7. Choose 'Direct Connection' if you are using Internet with plug and play device. Click Next.
-8. Choose any download site preferably "cygwin.mirror.constant.com" and then click Next.
-9. In the top left corner of the package manager click the drop down list named view and select the option ‘Category’
-10. To install a package you will first find it using the search bar and navigating to the correct category of software. Beside each package there is a column titled ‘new’. In this box if you see the label 'skip' in front of a package then this package is not currently installed. To select a package for installation click the drop down and select the highest version number which is a non-beta release (the latest version will typically be lower in the list). If you see the label 'Keep', leave as it is - this means that there is a current version of this package already installed. In the following instructions you will see many packages returned by your search results. It is very important that you select the packages whose names exactly match what is listed below. Install the latest (non-beta versions) of the following minimal packages for Cygwin:
+4. Optate 'Install from Internet' option and then click Next.
+5. Optate your desired directory by clicking on Browse button. Cull 'All Users (Recommended)' and then click Next.
+6. Cull the local package directory where you would relish your installation files to be placed (dont expunge this folder in the future; its designation will be long and weird, mine is http%3a%2f%2fcygwin.mirror.constant.com%2f). Click Next.
+7. Optate 'Direct Connection' if you are utilizing Internet with plug and play contrivance. Click Next.
+8. Optate any download site preferably "cygwin.mirror.constant.com" and then click Next.
+9. In the top left corner of the package manager click the drop down list designated view and cull the option ‘Category’
+10. To install a package you will first find it utilizing the search bar and navigating to the correct category of software. Adjacent to each package there is a column titled ‘new’. In this box if you optically discern the label 'skip' in front of a package then this package is not currently installed. To cull a package for installation click the drop down and cull the highest version number which is a non-beta release (the latest version will typically be lower in the list). If you visually perceive the label 'Keep', leave as it is - this denotes that there is a current version of this package already installed. In the following injuctive authorizations you will visually perceive many packages returned by your search results. It is very paramount that you cull the packages whose names precisely match what is listed below. Install the latest (non-beta versions) of the following minimal packages for Cygwin:
 
-    - gcc-core: GNU Compiler Collection (C,OpenMP) - To select this package, type 'gcc-core' in search bar and hit Enter. Expand 'Devel'.
+    - gcc-core: GNU Compiler Accumulation (C,OpenMP) - To cull this package, type 'gcc-core' in search bar and hit Enter. Expand 'Devel'.
 
     - make: The GNU version of the 'make' utility - Again type 'make' in the search bar and hit Enter. Again expand 'Devel' by clicking corresponding + button.
 
-    - vim: Vi Improved - enhanced vi editor - Do the same but this time search vim and it should be in 'Editors' category.
+    - vim: Vi Ameliorated - enhanced vi editor - Do the same but this time search vim and it should be in 'Editors' category.
 
     - Perl: Perl programming language interpreter - Search perl and expand the interpreters category.
 
     - Python2: Python programming language interpreter - Search python and expand the interpreters category.
 
 11. Click Next.
-12. Review the changes and then click Next.
-13. Wait for the download and installation to finish
-14. Keep default check boxes of placing an icon on the Desktop (this is important because you use this shortcut to open the cygwin terminal) and then click Finish.
-15. Move the cygwin setup application that you downloaded in step 1 to the cygwin installation folder from step 5. If you ever need to install a new package, update a package, or remove a package, you simply rerun this ‘setup’ tool (it doesnt actually reinstall anything at this point it just updates files).
-
+12. Review the vicissitudes and then click Next.
+13. Wait for the download and installation to culminate
+14. Keep default check boxes of placing an icon on the Desktop (this is consequential because you utilize this shortcut to open the cygwin terminal) and then click Finish.
+15. Move the cygwin setup application that you downloaded in step 1 to the cygwin installation folder from step 5. If you ever need to install an incipient package, update a package, or abstract a package, you simply rerun this ‘setup’ implement (it doesnt genuinely reinstall anything at this point it just updates files).
 #### Install pySerial
 1. Open the cygwin terminal using the shortcut that was placed on your desktop during installation.
 2. Enter the following command to install pip (a python package installer) by copying and pasting:
